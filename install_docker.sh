@@ -1,4 +1,5 @@
 #!/bin/bash
+#Thanks Let's Node!
 # Default variables
 dive="false"
 function="install"
