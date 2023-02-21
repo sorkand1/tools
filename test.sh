@@ -18,9 +18,25 @@ function docker_down {
   docker-compose down
 }
 
+function docker_pull {
+  docker-compose pull
+}
+
+function docker_run {
+  docker-compose run --rm --entrypoint "./bin/run migrations:start" ironfish
+}
+
+function docker_up {
+  docker-compose up -d
+}
+
+
 colors
 line
 logo
 line
 docker_down
+docker_pull
+docker_run
+docker_up
 line
