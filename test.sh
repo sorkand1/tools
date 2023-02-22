@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function source {
-  source ~/.profile
+  docker exec -it ironfish sh
 }
 
 function status {
